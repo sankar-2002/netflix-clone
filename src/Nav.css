@@ -35,5 +35,7 @@
     right: 20px;
     width: 30px;
     height: 30px;
+    border-radius: 10%;
+    border: 1px solid white;
 
 }
