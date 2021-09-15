@@ -14,6 +14,7 @@ import { logout, selectUser } from './features/userSlice';
 import { login } from './features/userSlice';
 import { useSelector } from 'react-redux';
 import ProfileScreen from './screens/ProfileScreen';
+import VideoPlay from './screens/VideoPlay';
 
 
 function App() {
@@ -58,6 +59,10 @@ function App() {
               </Route>
               <Route exact path="/">
                 <HomeScreen />
+              </Route>
+
+              <Route exact path="/video">
+                <VideoPlay />
               </Route>
             </Switch>)
         }

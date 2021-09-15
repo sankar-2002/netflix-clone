@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from './axios';
 import "./Row.css"
+import { useHistory } from "react-router-dom";
 
 function Row({ title, fetchURL, isLargeRow = false }) {  //props destructuring....
 
 
     const [movies, setMovies] = useState([]);
+    const history = useHistory();
     const base_url = "https://image.tmdb.org/t/p/original/";
 
     useEffect(() => {
@@ -38,6 +40,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {  //props destructuring..
                                 src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path
                                     }`}
                                 alt={movie.name}
+                                onClick={() => history.push("/video")} 
                             />
                         )
 
