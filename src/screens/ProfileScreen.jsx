@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from '../features/userSlice';
 import { auth } from '../firebase';
 import Nav from '../Nav';
+import { useHistory } from "react-router-dom";
 import "./ProfileScreen.css";
 
 
@@ -10,6 +11,8 @@ import "./ProfileScreen.css";
 function ProfileScreen() {
 
     const user = useSelector(selectUser); //fetching the email using redux state management...
+
+    const history = useHistory();
 
 
     return (
@@ -23,7 +26,9 @@ function ProfileScreen() {
                         <h2>{user.email}</h2>
                         <div className="profileScreen_plans">
                             <h3>Plans</h3>
-                            <p></p>
+                            <p> Currently You Are Using Free Trial</p>
+                            <span className="contButton" onClick={() => history.push("/") }> Continue ▶ </span>
+                            
                             <button onClick={() => auth.signOut()} className="profileScreen_signOut">Sign Out</button>
                         </div>
 

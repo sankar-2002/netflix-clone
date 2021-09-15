@@ -27,6 +27,7 @@
     object-fit: contain;
     cursor: pointer;
     padding: left;
+    margin-left: 5px;
 }
 
 .nav_avatar {
@@ -37,5 +38,9 @@
     height: 30px;
     border-radius: 10%;
     border: 1px solid white;
+}
 
+.nav_avatar:hover {
+    transform: scale(1.35);
+    opacity: 1;
 }

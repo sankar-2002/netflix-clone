@@ -21,12 +21,13 @@ function HomeScreen() {
             <Row
                 title="Trending Now"
                 fetchURL={requests.fetchTrending}
+                isLargeRow
             />
 
             <Row
                 title="Top Rated"
                 fetchURL={requests.fetchTopRated}
-
+                isLargeRow
             />
 
             <Row

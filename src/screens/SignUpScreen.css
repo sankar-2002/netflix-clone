@@ -1,9 +1,10 @@
 .signUpScreen {
     max-width: 300px;
-    padding: 70px;
+    padding: 70px; 
     margin-left: auto;
     margin-right: auto;
     background: rgba(0, 0, 0, 0.85);
+    margin-bottom: auto;
 }
 
 .signUpScreen > form {
@@ -34,14 +35,18 @@
 
 .signUpScreen > form > h1 {
     margin-bottom: 25px;
-    text-align: left;
+    text-align: center;
+}
+
+.signUpScreen > form > h4 {
+    margin-top: 2px;
 }
 
 .signUpScreen_gray {
     color: gray;
 }
 
-.signUpScreen_link:hover{
+/* .signUpScreen_link:hover{
     cursor: pointer;
     text-decoration: underline;
-}
+} */

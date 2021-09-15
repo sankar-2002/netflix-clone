@@ -19,7 +19,7 @@ function LoginScreen() {
 
                 <div className="loginScreen_gradient">
 
-                </div>
+                </div>  
 
                 <div className="loginScreen_body">
 

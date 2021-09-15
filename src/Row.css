@@ -26,15 +26,16 @@
 }
 
 .row_poster:hover {
-    transform: scale(1.08);
+    transform: scale(1.35);
     opacity: 1;
 }
 
 .row_posterLarge {
+    padding-top: 2px;
     max-height: 250px;
 }
 
 .row_posterLarge:hover {
-    transform: scale(1.09);
+    transform: scale(1.2);
     opacity: 1;
 }

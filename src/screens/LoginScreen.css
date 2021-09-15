@@ -65,6 +65,11 @@
     border: none;
 }
 
+.loginScreen_button:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
 .loginScreen_input > form > input {
     padding: 10px;
     outline-width: 0;
@@ -72,6 +77,8 @@
     width: 30%;
     border: none;
     max-width: 600px;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
 }
 
 .loginScreen_getStarted {
@@ -82,9 +89,12 @@
     border: none;
     font-weight: 600;
     cursor: pointer;
+    border-bottom-right-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    
 }
 
 
 .loginScreen_input {
-    margin: 20px;
+    margin: 20px; 
 }
